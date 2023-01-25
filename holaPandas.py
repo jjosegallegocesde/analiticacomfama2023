@@ -34,3 +34,26 @@ print("\n")
 filtroIloc=fuenteDatos.iloc[[5,15]]
 print(filtroIloc)
 print("\n")
+
+
+#1. mostrar primeros 50 empleados
+filtro50=fuenteDatos.head(50)
+print(filtro50)
+print("\n")
+#2. de los pirmeros 50 empleados mostrar solo salario
+filtrosalario=fuenteDatos.head(50)["salario"]
+print(filtrosalario)
+print("\n")
+#3. obtener informacion general de los 500 registros encontando la media aritmetica de los salarios
+filtroMedia=fuenteDatos.describe()
+print(filtroMedia)
+print("\n")
+
+#4. obtener datos registro 100,200,300,400
+filtroEmp=fuenteDatos.iloc[[100,200,300,400]]
+print(filtroEmp)
+print("\n")
+#5. obtener ulimos 3 empleados solo ver nombre y salario
+filtroult3=fuenteDatos.tail(3)[["nombres","salario"]]
+print(filtroult3)
+print("\n")
