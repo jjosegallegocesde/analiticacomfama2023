@@ -22,9 +22,11 @@ print(filtrotail)
 
 #este sirve para flitar datos filtronombre=fuenteDatos.head(acá va la cantidad que quiero que me muestre)["acá va el atributo"]
 
-filtronombre=fuenteDatos.head(15)["nombres"]
+filtronombre=fuenteDatos.head(15)
+["nombres"]
 print("\n")
 print(filtronombre)
+
 
 #este es para obtener rangos filtroIloc= fuenteDatos.iloc[5:15]
 filtroIloc= fuenteDatos.iloc[5:15]
@@ -36,3 +38,5 @@ print(filtroIloc)
 filtroIloc= fuenteDatos.iloc[[5,15,20]]
 print("\n")
 print(filtroIloc)
+
+
