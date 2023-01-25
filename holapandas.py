@@ -36,3 +36,21 @@ print(filtroIloc)
 print("\n")
 filtroIloc2 = fuenteDatos.iloc[[5,15]] #solo imprimirá la fila 5 y la 15
 print(filtroIloc2)
+
+print("\n")
+#primeros 50 con salario
+primeros50 = fuenteDatos.head(50)["salario"]
+print(primeros50)
+
+print("\n")
+#obtener la información general de los 500 registros encontrando la media  aritmética o promedio de salarios 
+media = fuenteDatos.describe()
+print(media)
+print("\n")
+#Datos del registro 100, 200, 300, 400
+filtros = fuenteDatos.iloc[[100,200,300,400]]
+print(filtros)
+print("\n")
+#últimos 3 empleados. Solo quiero ver el nombre y el salario
+nom_sal = fuenteDatos.tail(3)[["nombres","salario"]]
+print(nom_sal)
