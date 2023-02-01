@@ -22,3 +22,4 @@ print(filtroIloc)
 filtroIloc2 = fuenteDatos.iloc[[5,15,30]]
 print("\n")
 print(filtroIloc2)
+
