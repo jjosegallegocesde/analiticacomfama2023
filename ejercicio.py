@@ -37,3 +37,14 @@ print("\n")
 filtronomysala=fuenteDatos.tail(3)[["nombres","salario"]]
 
 print(filtronomysala)
+
+# trabajo en clase 8-12-2023 
+# acá se filtra con condiciones, en este caso menores de 30 y los primeros 20 regitros
+
+filtroEdad = fuenteDatos[fuenteDatos["edad"]<30].head(20)
+print(filtroEdad)
+
+#limpiandodatos, este borra los campos vacio na
+datalimpia = filtroEdad.dropna()
+print("\n")
+print(datalimpia)
