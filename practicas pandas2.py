@@ -11,3 +11,10 @@ print("")
 print(extranjeros.head(1000).mean())
 print("")
 print(extranjeros.columns)
+
+pd.set_option('max_rows', None)
+pd.set_option('max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
+
+print(extranjeros)
